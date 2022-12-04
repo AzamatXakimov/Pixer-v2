@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    <!-- Header start -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a class="header-logo" href="./index.html">
+                    <svg width="81" height="28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.392V.303h9.343a9.566 9.566 0 0 1 3.413.604 8.7 8.7 0 0 1 2.806 1.7 7.995 7.995 0 0 1 2.596 6.016 7.992 7.992 0 0 1-2.596 5.978 8.684 8.684 0 0 1-2.806 1.7 9.566 9.566 0 0 1-3.41.606h-5.09v10.48L0 27.391Zm9.456-14.566a4.682 4.682 0 0 0 1.884-.356c.526-.222 1-.55 1.394-.965.371-.395.665-.856.866-1.36.196-.48.298-.994.301-1.513a4.204 4.204 0 0 0-1.167-2.896 4.477 4.477 0 0 0-3.273-1.342H4.257v8.436l5.199-.004ZM21.473 8.854v18.538h4.183V8.854h-4.183Z" fill="currentColor"/><path d="M26.361 2.835a2.774 2.774 0 0 1-.81 2.005 2.66 2.66 0 0 1-1.978.832V0a2.655 2.655 0 0 1 1.979.832 2.77 2.77 0 0 1 .81 2.002ZM23.57 0v5.675a2.69 2.69 0 0 1-2.01-.832 2.763 2.763 0 0 1-.813-2.008A2.775 2.775 0 0 1 21.56.833 2.709 2.709 0 0 1 23.57 0Z" fill="#35AF39"/><path d="M34.849 17.97 28.48 8.855h4.86l3.993 5.864h.113l3.725-5.864h5.048l-6.442 9.117 6.555 9.42h-4.967l-3.993-6.052h-.113l-3.96 6.053h-4.932l6.48-9.421ZM65.29 22.965a10.063 10.063 0 0 1-3.318 3.595c-1.43.96-3.188 1.44-5.273 1.44a9.745 9.745 0 0 1-3.823-.738 9.053 9.053 0 0 1-3.033-2.062 9.458 9.458 0 0 1-1.997-3.121 10.588 10.588 0 0 1-.716-3.954 10.667 10.667 0 0 1 .677-3.802 9.69 9.69 0 0 1 1.902-3.141 9.063 9.063 0 0 1 3.089-2.194 9.029 9.029 0 0 1 3.711-.737c1.43 0 2.705.24 3.825.718a8.111 8.111 0 0 1 2.844 2.006 8.796 8.796 0 0 1 1.79 3.102c.425 1.279.635 2.62.621 3.968v.34a1.713 1.713 0 0 0-.038.34 1.26 1.26 0 0 0-.037.302H51.312c.053.806.271 1.591.64 2.308a5.396 5.396 0 0 0 1.3 1.627 5.074 5.074 0 0 0 1.714.945c.596.198 1.219.3 1.846.303 1.204 0 2.196-.29 2.977-.87a7.199 7.199 0 0 0 1.919-2.153l3.581 1.778Zm-3.883-7.15a5.323 5.323 0 0 0-.357-1.267c-.2-.483-.494-.92-.866-1.285a5.005 5.005 0 0 0-1.507-1.002c-.615-.277-1.362-.416-2.241-.416-1.204 0-2.24.36-3.109 1.078-.868.719-1.452 1.683-1.752 2.892h9.832ZM68.755 8.854h3.95v2.8h.226c.238-.492.55-.944.928-1.338a6.06 6.06 0 0 1 1.32-1.068 8.369 8.369 0 0 1 1.545-.718 4.767 4.767 0 0 1 1.563-.282 6.03 6.03 0 0 1 1.545.172c.407.107.8.265 1.168.471l-1.206 3.821a3.99 3.99 0 0 0-.923-.283 6.863 6.863 0 0 0-1.224-.095 4.148 4.148 0 0 0-1.866.42 4.83 4.83 0 0 0-1.487 1.14 5.232 5.232 0 0 0-.998 1.71 6.085 6.085 0 0 0-.358 2.091v9.697h-4.177l-.006-18.538Z" fill="currentColor"/></svg>
+                </a>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#">
+                                Team
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="#">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="header-link" href="tel:2395550108">(239) 555-0108</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header finish -->
+
+    <!-- Main start -->
+    <main class="site-main">
+        <!-- Hero section start  -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-textbox">
+                        <h1 class="hero-title">
+                            Take your business to the next level take out
+                        </h1>
+
+                        <div class="hero-desc-box">
+                            <p class="hero-desc">
+                                Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
+                            </p>
+                        </div>
+                        <a class="hero-link" href="#">
+                            Learn more
+                        </a>
+                    </div>
+                    <iframe class="hero-video" data-aos="fade-left"  width="592" height="334" src="https://www.youtube.com/embed/QZEm2N4J3ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section finish  -->
+
+        <!-- How help section start  -->
+        <section class="how-help">
+            <div class="container">
+                <h2 class="how-help-title">
+                    How can we help you?
+                </h2>
+                <ul class="how-help-list">
+                    <li class="how-help-item" data-aos="flip-left">
+                        <div>
+                            <div class="how-help-textbox how-help-textbox-web">
+                                <h3 class="how-help-text">
+                                    Web Designer
+                                </h3>
+                            </div>
+                            <p class="how-help-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Ut enim ad minim veniam, quis 
+                            </p>
+                        </div>
+                        <a class="how-help-link" href="#">
+                            View  more
+                        </a>
+                    </li>
+                    <li class="how-help-item how-help-item-center" data-aos="flip-left">
+                        <div>
+                            <div class="how-help-textbox how-help-textbox-smm">
+                                <h3 class="how-help-text">
+                                    SMM
+                                </h3>
+                            </div>
+                            <p class="how-help-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  
+                            </p>
+                        </div>
+                        <a class="how-help-link" href="#">
+                            View  more
+                        </a>
+                    </li>
+                    <li class="how-help-item" data-aos="flip-left">
+                        <div>
+                            <div class="how-help-textbox how-help-textbox-branding">
+                                <h3 class="how-help-text">
+                                    Branding
+                                </h3>
+                            </div>
+                            <p class="how-help-desc">
+                                No the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee 
+                            </p>
+                        </div>
+                        <a class="how-help-link" href="#">
+                            View  more
+                        </a>
+                    </li>
+                    <li class="how-help-item" data-aos="flip-left">
+                        <div>
+                            <div class="how-help-textbox how-help-textbox-devalop">
+                                <h3 class="how-help-text">
+                                    Developer
+                                </h3>
+                            </div>
+                            <p class="how-help-desc">
+                                Which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our 
+                            </p>
+                        </div>
+                        <a class="how-help-link" href="#">
+                            View  more
+                        </a>
+                    </li>
+                    <li class="how-help-item how-help-item-center" data-aos="flip-left">
+                        <div>
+                            <div class="how-help-textbox how-help-textbox-design">
+                                <h3 class="how-help-text">
+                                    Graphic design
+                                </h3>
+                            </div>
+                            <p class="how-help-desc">
+                                But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted
+                            </p>
+                        </div>
+                        <a class="how-help-link" href="#">
+                            View  more
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- How elp section finish  -->
+
+        <!-- How work section start  -->
+        <section class="how-work">
+            <div class="container">
+                <div class="how-work-titlebox">
+                    <h2 class="how-work-title">
+                        How do we work?
+                    </h2>
+                    <p class="how-work-desc">
+                        Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
+                    </p>
+                </div>
+
+                <ul class="how-work-list">
+                    <li class="how-work-item">
+                        <img data-aos="fade-right" src="./images/mens-coding.jpg" 
+                        width="488"
+                        height="390"
+                        srcset="./images/mens-coding.jpg 1x , ./images/mens-coding@2x.jpg 2x"
+                        alt="Mens coding img">
+                        <div class="how-work-textbox">
+                            <div class="how-work-item-textbox">
+                                <h3 class="how-work-text">
+                                    Let's clarify the requirements
+                                </h3>
+                            </div>
+                            <p class="how-work-item-desc">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="how-work-item">
+                        <img data-aos="fade-left" src="./images/office.jpg" 
+                        width="488"
+                        height="390"
+                        srcset="./images/office.jpg 1x , ./images/office@2x.jpg 2x"
+                        alt="Office img">
+                        <div class="how-work-textbox-reverse">
+                            <div class="how-work-item-textbox">
+                                <h3 class="how-work-text">
+                                    Let's clarify the requirements
+                                </h3>
+                            </div>
+                            <p class="how-work-item-desc">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="how-work-item">
+                        <img data-aos="fade-right" src="./images/work.jpg" 
+                        width="488"
+                        height="390"
+                        srcset="./images/work.jpg 1x , ./images/work@2x.jpg 2x"
+                        alt="Mens working img">
+                        <div class="how-work-textbox">
+                            <div class="how-work-item-textbox">
+                                <h3 class="how-work-text">
+                                    Let's clarify the requirements
+                                </h3>
+                            </div>
+                            <p class="how-work-item-desc">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- How work section finish  -->
+
+        <!-- How work section start  -->
+        <section class="for-user">
+            <div class="container">
+                <div class="for-user-inner">
+                    <div class="for-user-titlebox">
+                        <div class="for-user-titlebox-inner">
+                            <h2 class="for-user-title">
+                                Leave your number and we'll call you back
+                            </h2>
+                        </div>
+                        <p class="for-user-desc">
+                            Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
+                        </p>
+                    </div>
+
+                    <form class="for-user-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                        <input class="for-user-input" type="text" name="user_name" id="user_name" minlength="2"
+                        maxlength="1000000" aria-label="Enter your name" required placeholder="Name">
+                        <input class="for-user-input" type="tel" name="user_phone" id="user_name" aria-label="Enter your phone" required placeholder="Phone">
+
+                        <textarea class="for-user-textarea" id="user_desc" name="user_desc" aria-label="Enter your description" placeholder="Description">
+                        </textarea>
+
+                        <button class="for-user-btn">
+                            Send
+                        </button>
+
+                        <p class="for-user-form-desc">
+                            We call back in 10-30 minutes, guaranteed!
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- How work section finish  -->
+    </main>
+    <!-- Main finish  -->
+
+    <!-- Footer start -->
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="site-footer-top-inner">
+                    <div class="site-footer-top-linkbox">
+                        <div class="site-footer-top-navbox">
+                            <strong class="site-footer-top-text">
+                                Services
+                            </strong>
+                            <ul class="site-footer-top-list">
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        SMM
+                                    </a>
+                                </li>
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        Web development
+                                    </a>
+                                </li>
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        Mobile apps
+                                    </a>
+                                </li>
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        Branding
+                                    </a>
+                                </li>
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        Graphic design
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-footer-top-navbox">
+                            <strong class="site-footer-top-text">
+                                Resources
+                            </strong>
+                            <ul class="site-footer-top-list">
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        Showcase
+                                    </a>
+                                </li>
+                                <li class="site-footer-top-item">
+                                    <a class="site-footer-top-link" href="#">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="site-footer-top-second-linkbox">
+                        <strong class="site-footer-top-text">
+                            Connect with us
+                        </strong>
+                        <ul class="site-footer-top-list">
+                            <li class="site-footer-top-item">
+                                <a class="site-footer-top-link" href="tel: 2395550108">
+                                    (239) 555-0108
+                                </a>
+                            </li>
+                            <li class="site-footer-top-item">
+                                <a class="site-footer-top-link" href="mailto: hello@pixer.com">
+                                    hello@pixer.com
+                                </a>
+                            </li>
+                            <li class="site-footer-top-item">
+                                <a class="site-footer-top-link" href="#">
+                                    4140 Parker Rd. Allentown, New Mexico 31134
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <ul class="site-footer-network-list">
+                            <li class="site-footer-network-item">
+                                <a class="site-footer-network-link" href="#">
+                                    <svg width="24" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.944 19.642a20.557 20.557 0 0 1-3.178-.252 14.902 14.902 0 0 1-4.346-1.583L0 17.03l1.537-.506c1.682-.553 2.705-.9 3.97-1.434a5.281 5.281 0 0 1-2.71-3.149l-.358-1.087.294.045a5.343 5.343 0 0 1-.668-.825 5.067 5.067 0 0 1-.866-3.01l.067-.949.567.22a5.315 5.315 0 0 1-.514-1.443 5.495 5.495 0 0 1 .584-3.7l.494-.904.662.8a12.166 12.166 0 0 0 7.884 4.443 4.724 4.724 0 0 1 .286-2.508A4.699 4.699 0 0 1 13.14.83a5.723 5.723 0 0 1 3.325-.818 5.306 5.306 0 0 1 3.263 1.347c.407-.11.808-.243 1.2-.4.26-.1.559-.21.93-.339l1.365-.47-.893 2.551c.059 0 .12-.009.183-.012l1.463-.064-.864 1.183c-.05.068-.062.087-.08.114-.07.105-.157.236-1.343 1.822A2.239 2.239 0 0 0 21.27 7.2a13.79 13.79 0 0 1-.751 5.542 9.808 9.808 0 0 1-2.63 3.9 11.612 11.612 0 0 1-5.502 2.658 16.932 16.932 0 0 1-3.443.342Z" fill="currentColor"/></svg>
+                                </a>
+                            </li>
+                            <li class="site-footer-network-item">
+                                <a class="site-footer-network-link" href="#">
+                                    <svg width="14" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.41.01H10.3c-3.493 0-5.745 2.318-5.745 5.906v2.723H1.424a.488.488 0 0 0-.488.49v3.946a.49.49 0 0 0 .488.489h3.13v9.956a.49.49 0 0 0 .49.489h4.078a.49.49 0 0 0 .489-.49v-9.955h3.655a.488.488 0 0 0 .488-.49V9.13a.49.49 0 0 0-.49-.49H9.61V6.33c0-1.11.263-1.673 1.708-1.673h2.098a.488.488 0 0 0 .488-.49V.505A.49.49 0 0 0 13.41.01Z" fill="currentColor"/></svg>
+                                </a>
+                            </li>
+                            <li class="site-footer-network-item">
+                                <a class="site-footer-network-link" href="#">
+                                    <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="currentColor"><path d="M2.767 1.01A2.676 2.676 0 0 0 .101 2.58a2.683 2.683 0 0 0 1.52 3.618c.345.127.712.181 1.08.16h.032a2.678 2.678 0 0 0 2.684-1.58 2.685 2.685 0 0 0-1.56-3.625 2.678 2.678 0 0 0-1.09-.144ZM.164 8.472h5.14v15.477H.164V8.472ZM17.922 8.107c-2.772 0-4.63 2.608-4.63 2.608V8.47h-5.14v15.478h5.14v-8.643a3.53 3.53 0 0 1 .168-1.256 2.815 2.815 0 0 1 2.637-1.88c1.86 0 2.604 1.418 2.604 3.5v8.28h5.138v-8.876c-.004-4.754-2.54-6.966-5.917-6.966Z"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+                                </a>
+                            </li>
+                            <li class="site-footer-network-item">
+                                <a class="site-footer-network-link" href="#">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="currentColor"><path d="M11.987 5.836a6.147 6.147 0 0 0-5.68 3.803 6.164 6.164 0 0 0 1.335 6.71 6.15 6.15 0 0 0 10.501-4.351 6.162 6.162 0 0 0-3.8-5.694 6.146 6.146 0 0 0-2.356-.468Zm0 10.155a3.993 3.993 0 0 1-3.691-2.47 4.004 4.004 0 0 1 2.912-5.453 3.992 3.992 0 0 1 4.102 1.7 4.004 4.004 0 0 1-.497 5.051 3.994 3.994 0 0 1-2.826 1.172Z"/><path d="M16.93.075c-2.205-.1-7.668-.1-9.876 0a7.16 7.16 0 0 0-5.03 1.941C-.283 4.324.011 7.434.011 11.999c0 4.668-.26 7.706 2.011 9.979 2.315 2.311 5.47 2.008 9.965 2.008 4.619 0 6.213 0 7.847-.63 2.22-.863 3.895-2.85 4.06-6.419.1-2.209.1-7.677 0-9.887-.2-4.213-2.456-6.768-6.968-6.976l.004.001Zm3.492 20.371c-1.512 1.513-3.608 1.378-8.46 1.378-4.994 0-6.992.074-8.458-1.393-1.684-1.677-1.379-4.37-1.379-8.453 0-5.525-.566-9.5 4.973-9.788 1.273-.045 1.647-.06 4.85-.06l.046.03c5.323 0 9.5-.558 9.75 4.986.058 1.265.07 1.645.07 4.847 0 4.942.093 6.959-1.392 8.453Z"/><path d="M18.387 7.032a1.438 1.438 0 1 0-.002-2.876 1.438 1.438 0 0 0 .002 2.876Z"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="site-footer-bottom-inner">
+                    <a class="site-footer-logo" href="./index.html">
+                        <svg width="81" height="28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.392V.303h9.343a9.566 9.566 0 0 1 3.413.604 8.7 8.7 0 0 1 2.806 1.7 7.995 7.995 0 0 1 2.596 6.016 7.992 7.992 0 0 1-2.596 5.978 8.684 8.684 0 0 1-2.806 1.7 9.566 9.566 0 0 1-3.41.606h-5.09v10.48L0 27.391Zm9.456-14.566a4.682 4.682 0 0 0 1.884-.356c.526-.222 1-.55 1.394-.965.371-.395.665-.856.866-1.36.196-.48.298-.994.301-1.513a4.204 4.204 0 0 0-1.167-2.896 4.477 4.477 0 0 0-3.273-1.342H4.257v8.436l5.199-.004ZM21.473 8.854v18.538h4.183V8.854h-4.183Z" fill="currentColor"/><path d="M26.361 2.835a2.774 2.774 0 0 1-.81 2.005 2.66 2.66 0 0 1-1.978.832V0a2.655 2.655 0 0 1 1.979.832 2.77 2.77 0 0 1 .81 2.002ZM23.57 0v5.675a2.69 2.69 0 0 1-2.01-.832 2.763 2.763 0 0 1-.813-2.008A2.775 2.775 0 0 1 21.56.833 2.709 2.709 0 0 1 23.57 0Z" fill="#35AF39"/><path d="M34.849 17.97 28.48 8.855h4.86l3.993 5.864h.113l3.725-5.864h5.048l-6.442 9.117 6.555 9.42h-4.967l-3.993-6.052h-.113l-3.96 6.053h-4.932l6.48-9.421ZM65.29 22.965a10.063 10.063 0 0 1-3.318 3.595c-1.43.96-3.188 1.44-5.273 1.44a9.745 9.745 0 0 1-3.823-.738 9.053 9.053 0 0 1-3.033-2.062 9.458 9.458 0 0 1-1.997-3.121 10.588 10.588 0 0 1-.716-3.954 10.667 10.667 0 0 1 .677-3.802 9.69 9.69 0 0 1 1.902-3.141 9.063 9.063 0 0 1 3.089-2.194 9.029 9.029 0 0 1 3.711-.737c1.43 0 2.705.24 3.825.718a8.111 8.111 0 0 1 2.844 2.006 8.796 8.796 0 0 1 1.79 3.102c.425 1.279.635 2.62.621 3.968v.34a1.713 1.713 0 0 0-.038.34 1.26 1.26 0 0 0-.037.302H51.312c.053.806.271 1.591.64 2.308a5.396 5.396 0 0 0 1.3 1.627 5.074 5.074 0 0 0 1.714.945c.596.198 1.219.3 1.846.303 1.204 0 2.196-.29 2.977-.87a7.199 7.199 0 0 0 1.919-2.153l3.581 1.778Zm-3.883-7.15a5.323 5.323 0 0 0-.357-1.267c-.2-.483-.494-.92-.866-1.285a5.005 5.005 0 0 0-1.507-1.002c-.615-.277-1.362-.416-2.241-.416-1.204 0-2.24.36-3.109 1.078-.868.719-1.452 1.683-1.752 2.892h9.832ZM68.755 8.854h3.95v2.8h.226c.238-.492.55-.944.928-1.338a6.06 6.06 0 0 1 1.32-1.068 8.369 8.369 0 0 1 1.545-.718 4.767 4.767 0 0 1 1.563-.282 6.03 6.03 0 0 1 1.545.172c.407.107.8.265 1.168.471l-1.206 3.821a3.99 3.99 0 0 0-.923-.283 6.863 6.863 0 0 0-1.224-.095 4.148 4.148 0 0 0-1.866.42 4.83 4.83 0 0 0-1.487 1.14 5.232 5.232 0 0 0-.998 1.71 6.085 6.085 0 0 0-.358 2.091v9.697h-4.177l-.006-18.538Z" fill="currentColor"/></svg>
+                    </a>
+        
+                    <p class="site-footer-bottom-desc">
+                        Copyright © 2022 Pixer
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer finish -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
